@@ -172,11 +172,8 @@ document.getElementById("btn").onclick = () => {
 
     // генеруємо передбачення
     const p = predictions[Math.floor(Math.random() * predictions.length)];
-    const g = gifts[Math.floor(Math.random() * gifts.length)];
 
     document.getElementById("prediction").innerText = "✨ " + p;
-    document.getElementById("giftImage").src = g;
-    document.getElementById("gift").style.display = "block";
 
     // робимо кнопку неактивною
     btn.disabled = true;
